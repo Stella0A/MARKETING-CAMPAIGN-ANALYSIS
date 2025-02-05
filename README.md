@@ -79,11 +79,9 @@ Using the marketing campaign data of 2,240 customers from Maven Analytics. I ser
     df['Age_Category'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
     print(df)
     
-##### Correlation Analysis
+##### Correlation Analysis - Heatmap of correlations
     numeric_cols = ['Age', 'Income', 'Kidhome', 'Teenhome', 'MntWines', 'MntFruits', 'MntMeatProducts', 'MntFishProducts', 'MntSweetProducts', 'MntGoldProds']
-    correlation = df[numeric_cols].corr()
-
-##### Heatmap of correlations
+    correlation = df[numeric_cols].corr() 
     plt.figure(figsize=(10, 6))
     sns.heatmap(correlation, annot=True, cmap='coolwarm', fmt=".2f")
     plt.title('Correlation between Demographics and Spending')
@@ -91,7 +89,7 @@ Using the marketing campaign data of 2,240 customers from Maven Analytics. I ser
     
 ### Analysis
 ### CUSTOMER PURCHASING BEHAVIOUR
-##### Select the relevant columns for products counts -  Calculate total purchases for each channel
+   ##### Select the relevant columns for products counts -  Calculate total purchases for each channel
     products = ['MntWines', 
     'MntFruits', 
     'MntMeatProducts', 
@@ -101,14 +99,14 @@ Using the marketing campaign data of 2,240 customers from Maven Analytics. I ser
     total_products = df[products].sum()
 
 ### Which product do customers spend more on/purchase more?
-##### Plotting the total purchases as a pie chart
-plt.figure(figsize=(8, 8))
-total_products.plot(
-    kind='pie', 
-    autopct='%1.1f%%',  # Display percentages
-    startangle=90,  # Rotate the chart for better readability
-    colors=['skyblue', 'orange', 'green', 'purple']  # Custom colours)
-plt.title("Total Purchases by Products", fontsize=14)
-plt.ylabel("")  # Remove the default y-axis label
-plt.tight_layout()
-plt.show()
+   ##### Plotting the total purchases as a pie chart
+      plt.figure(figsize=(8, 8))
+      total_products.plot(
+          kind='pie', 
+          autopct='%1.1f%%',  # Display percentages
+          startangle=90,  # Rotate the chart for better readability
+          colors=['skyblue', 'orange', 'green', 'purple']  # Custom colours)
+      plt.title("Total Purchases by Products", fontsize=14)
+      plt.ylabel("")  # Remove the default y-axis label
+      plt.tight_layout()
+      plt.show()
