@@ -1,21 +1,22 @@
 # MARKETING CAMPAIGN ANALYSIS 
-## Overview
-Using the marketing campaign data of 2,240 customers from Maven Analytics. I served as a marketing analyst to analyse customer profiles, identify product preferences, evaluate campaign successes and failures, and assess channel performance. Through this analysis, I uncovered actionable insights that can help optimise marketing strategies, improve customer segmentation, and enhance overall campaign effectiveness.
+## Case Study Overview
+As a Marketing Analyst at Maven Analytics, I was tasked with analyzing data from a marketing campaign involving 2,240 customers. The objective was to examine customer profiles, identify product preferences, evaluate the success of various marketing campaigns, and assess the performance of different marketing channels.
+This analysis generated actionable insights aimed at optimizing marketing strategies, enhancing customer segmentation, and improving overall campaign effectiveness.
 
-## Tools Used for Analysis
+## Tools Used
 - Python
 - Numpy 
 - Pandas 
 - Seaborn
 - Matplotlib
-
+  
 ## Recommended Analysis
-1. Are there any null values or outliers? How will you handle them?
-2. What factors are significantly related to the number of web purchases?
-3. Which marketing campaign was the most successful?
-4. What does the average customer look like?
-5. Which products are performing best?
-6. Which channels are underperforming?
+1. Identify and handle null values and outliers.
+2. Determine factors significantly related to the number of web purchases.
+3. Evaluate which marketing campaign was the most successful.
+4. Define the profile of the average customer.
+5. Identify top-performing products.
+6. Detect underperforming marketing channels.
    
 #### IMPORT RELEVANT LIBRARIES
     import numpy as np
@@ -26,12 +27,12 @@ Using the marketing campaign data of 2,240 customers from Maven Analytics. I ser
 #### LOAD DATA
     df = pd.read_csv(r"C:\Users\STELLA\OneDrive - University of Bradford\Desktop\DATA SCIENCE\PERSONAL PROJECTS\Project Marketing Campaign Analysis\marketing_data.csv")
 
-#### Viewing the data
+#### View the data
     df.head()
 ![image](https://github.com/user-attachments/assets/37b04c76-7ecd-4a37-8fc7-aab7996bc3b8)
 ![image](https://github.com/user-attachments/assets/fb29644a-865e-4f34-bd03-19e96d4d24b2)
 
-#### Viewing the shape of the data
+#### View the shape of the data
     df.shape
     (2240, 28)
 
@@ -42,7 +43,7 @@ Using the marketing campaign data of 2,240 customers from Maven Analytics. I ser
 
 
 #### Business Questions
-    1. Are there any null values or outliers? How will you handle them?
+    1.  Identify and handle null values and outliers.
 ![image](https://github.com/user-attachments/assets/44a0fd57-7f32-4c30-a503-202996621f56)
 
 # Data Preprocessing
