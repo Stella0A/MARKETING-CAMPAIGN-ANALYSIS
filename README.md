@@ -1,5 +1,5 @@
 # MARKETING CAMPAIGN ANALYSIS 
-## Case Study Overview
+## Overview
 As a Marketing Analyst at Maven Analytics, I was tasked with analyzing data from a marketing campaign involving 2,240 customers. The objective was to examine customer profiles, identify product preferences, evaluate the success of various marketing campaigns, and assess the performance of different marketing channels.
 This analysis generated actionable insights aimed at optimizing marketing strategies, enhancing customer segmentation, and improving overall campaign effectiveness.
 
